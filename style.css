@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: monospace;
+}
+
+.title {
+    grid-area: head;
+}
+
+header {
+    grid-area: head;
+    background-color: rgb(60, 67, 70);
+    color: rgb(164, 192, 198);
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    padding-left: 10%;
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 22px;
+        color: rgb(144, 155, 158);
+        display: grid;
+        justify-content: center;
+    }
+}
+
+h2 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+li,
+p {
+    margin: 5px;
+    font-size: 15px;
+}
+
+#side-info {
+    grid-area: sideInfo;
+    background-color: rgb(85, 138, 156);
+    color: rgb(31, 40, 48);
+    padding: 25px;
+
+    h2 {
+        margin-bottom: 20px;
+        color: rgb(12, 16, 19);
+    }
+
+    p,
+    li {
+        margin-left: 0px;
+
+    }
+}
+
+.position {
+    font-style: italic;
+}
+
+.info-list {
+    list-style-type: none;
+}
+
+#side-info div {
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#referenser {
+    padding-top: 20px;
+
+    h2 {
+        text-decoration: underline 1px;
+        margin-bottom: 0px;
+    }
+}
+
+#brödtext {
+    grid-area: bread;
+    display: grid;
+    padding: 0px 3% 0px;
+    color: rgb(70, 70, 70);
+
+    #fast-anställning {
+        grid-template-areas:
+            "head"
+            "b";
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px;
+    }
+
+    li {
+        margin-left: 40px;
+    }
+}
+
+#fast-anst {
+    display: grid;
+    grid-template-areas:
+        "a b c";
+    grid-template-columns: 1fr 1fr 4fr;
+
+    li {
+        margin-left: 0px;
+    }
+}
+
+#sommarjobb ul li {
+    grid-area: b;
+}
+
+#sommarjobb ul p {
+    grid-area: c;
+}
+
+#arbetslivserfarenheter {
+    display: grid;
+    grid-template-rows: 70px;
+}
+
+#arbetslivserfarenheter ul {
+    display: grid;
+    grid-template-areas:
+        "head head"
+        "b c";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 20px;
+}
+
+#utbildning {
+    display: grid;
+    grid-template-rows: 70px;
+
+    #utb-lista {
+        display: grid;
+        grid-template-areas:
+            "head head"
+            "b c";
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+#övriga-meriter {
+    display: grid;
+    grid-template-rows: 70px;
+}
+
+
+
+
+img {
+    border-radius: 50%;
+    padding: 10%;
+}
+
+body {
+    display: grid;
+    grid-template:
+        "sideInfo head"
+        "sideInfo bread" / 1fr 4fr;
+}
