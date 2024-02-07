@@ -54,9 +54,9 @@ div {
 #brödtext h2 {
     justify-content:center;
     display: grid;
-    max-width: 412.36px;
     align-content: center;
-    margin-left: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-bottom: 1px solid;
     border-top: 1px solid;
     background-color: rgb(164, 192, 198);
@@ -120,10 +120,11 @@ p {
             "head"
             "b";
         grid-template-columns: 1fr;
+        grid-row-gap: 0;
     }
 
     li {
-        margin-left: 40px;
+        margin-left: 90px;
     }
 }
 
@@ -132,7 +133,9 @@ p {
     display: grid;
     grid-template-areas:
         "a b c";
-        grid-template-columns: 180px 180px 500px;
+    grid-template-columns: 205px 180px auto;
+    padding-left: 45px;
+
     li {
         margin-left: 0px;
     }
@@ -158,6 +161,7 @@ p {
 
     h3 {
         font-size: 1.3em;
+        padding-left: 30px;
     }
 }
 
@@ -168,14 +172,26 @@ p {
         "b c";
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 25px;
-    grid-row-gap: 10px;
+    grid-row-gap: 30px;
 }
 
 #sommarjobb {
-    max-width: 650px;
     
+    h3 {
+        background-color: rgb(164, 192, 198);
+        display: grid;
+        justify-content: center;
+        padding-left: 0;
+    }
+
     p {
         font-style: italic;
+        margin: 0;
+        padding-left: 50px;
+    }
+    li {
+        margin: 0;
+        margin-left: 130px;
     }
 }
 
@@ -192,7 +208,7 @@ p {
         grid-row-gap: 20px;
         padding-top: 30px;
         padding-bottom: 30px;
-        max-width: 650px;
+        padding-left: 130px;
     }
     p {
         display: grid;
@@ -254,10 +270,30 @@ body {
 
         h2 {
             margin-left: 0px;
-            justify-self: center;
-            width: 310px;
+            justify-content: center;
         }
     }
+
+     #sommarjobb {
+        li {
+            margin-left: 50px;
+        }
+
+        p {
+            padding-left: 15px;
+        }
+     }
+     #övriga-meriter {
+        li {
+            margin-left: 50px;
+        }
+     }
+
+     #utbildning {
+         #utb-lista {
+            padding-left: 30px;
+         }
+     }
 }
 
 @media (max-width: 450px) {
