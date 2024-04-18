@@ -252,6 +252,26 @@ body {
   object-position: bottom;
 }
 
+@media (max-width: 1400px) {
+  #fast-anst {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+
+    #info-container {
+      margin-left: 40px;
+    }
+  }
+  .title.fast {
+    padding-left: 0px;
+  }
+  #utbildning {
+    #utb-lista {
+      padding-left: 100px;
+    }
+  }
+}
+
 @media (max-width: 1140px) {
   body {
     display: flex;
@@ -302,21 +322,6 @@ body {
     #utb-lista {
       padding-left: 10px;
     }
-  }
-}
-
-@media (max-width: 1400px) {
-  #fast-anst {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0px;
-
-    #info-container {
-      margin-left: 40px;
-    }
-  }
-  .title.fast {
-    padding-left: 0px;
   }
 }
 
