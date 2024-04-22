@@ -53,7 +53,7 @@ div {
   display: flex;
   justify-content: center;
   padding-left: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-bottom: 1px solid;
   border-top: 1px solid;
 }
@@ -154,9 +154,7 @@ p {
 
 #arbetslivserfarenheter {
   display: grid;
-  grid-template-rows: 70px;
   grid-row-gap: 30px;
-  padding-bottom: 30px;
 
   h2 {
     border-top: 0;
